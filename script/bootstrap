@@ -154,3 +154,8 @@ fi
 
 echo ''
 echo '  All installed!'
+echo ' ---------------- '
+echo ''
+echo ' Now you should:'
+echo ' - apm login' # Login to apm
+echo ' - apm stars --install' # Install all starred packages
