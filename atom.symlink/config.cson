@@ -1,36 +1,46 @@
 "*":
-  editor:
-    showIndentGuide: true
-    fontFamily: "Menlo"
-    invisibles: {}
-    fontSize: 15
-    softWrapAtPreferredLineLength: true
+  welcome:
+    showOnStartup: false
   core:
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      "log"
-      "repositories"
-      "tmp"
-      "vendor"
-    ]
-    themes: [
-      "unity-ui"
-      "glacier-syntax"
-    ]
+    excludeVcsIgnoredPaths: false
     hideGitIgnoredFiles: true
+    projectHome: "/Users/Daniel/Projekt"
+    audioBeep: false
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
     ]
-  "spell-check":
-    grammars: [
-      "text.plain"
-      "source.gfm"
-      "text.git-commit"
-    ]
-  welcome:
-    showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    fontFamily: "Ubuntu mono"
+    fontSize: 15
+    showIndentGuide: true
+  linter:
+    lintOnFly: false
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  tabs:
+    usePreviewTabs: true
+  "project-manager":
+    sortBy: "group"
+    showPath: false
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "git-diff": false
+      "highlight-selected": true
+      pigments: true
+      codeglance: true
+  whitespace:
+    ensureSingleTrailingNewline: false
+    ignoreWhitespaceOnCurrentLine: false
+  "advanced-new-file":
+    suggestCurrentFilePath: true
+    showFilesInAutoComplete: true
+  "custom-title":
+    template: "<%= projectName %> <% if (filePath) { %>| <%= relativeFilePath %><% } %>"
+  "linter-jscs":
+    esnext: true
