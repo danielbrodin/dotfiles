@@ -24,4 +24,6 @@ fi
 # Install homebrew packages
 brew install grc coreutils spark
 
+./brew-cask.sh
+
 exit 0
