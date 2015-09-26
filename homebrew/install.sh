@@ -21,14 +21,19 @@ then
 
 fi
 
-# Install homebrew packages
-brew install grc coreutils spark
 # Make sure we’re using the latest Homebrew.
 brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
+# Install Homebrew packages
+brew install grc
+brew install coreutils
+brew install spark
+brew install node
+
+# Install Cask and applications
 ./brew-cask.sh
 
 # Remove outdated versions from the cellar.
