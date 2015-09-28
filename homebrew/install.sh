@@ -34,7 +34,7 @@ brew install spark
 brew install node
 
 # Install Cask and applications
-./brew-cask.sh
+sh $ZSH/homebrew/cask.sh
 
 # Remove outdated versions from the cellar.
 brew cleanup
