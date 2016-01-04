@@ -1,46 +1,122 @@
 "*":
-  welcome:
-    showOnStartup: false
+  "activate-power-mode":
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake: {}
+  "advanced-new-file":
+    showFilesInAutoComplete: true
+    suggestCurrentFilePath: true
+  "api-docs":
+    drupal: true
+    jquery: true
+    php: true
+    sass: true
+    underscore: true
+  "atom-autocomplete-php": {}
+  "atom-ctags":
+    autoBuildTagsWhenActive: true
+    cmdArgs: "--exclude=modules/contrib"
+  "autocomplete-plus":
+    useAlternateScoring: true
   core:
-    excludeVcsIgnoredPaths: false
-    hideGitIgnoredFiles: true
-    projectHome: "/Users/Daniel/Projekt"
     audioBeep: false
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+      "welcome"
+      "flex-tool-bar"
+      "tool-bar"
+      "markdown-scroll-sync"
+      "pigments"
+      "minimap-pigments"
+      "activate-power-mode"
+      "about"
     ]
+    excludeVcsIgnoredPaths: false
+    hideGitIgnoredFiles: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".sass-cache"
+    ]
+    packagesWithKeymapsDisabled: [
+      "tool-bar"
+      "emmet"
+    ]
+    projectHome: "/Users/Daniel/Projekt"
+  "custom-title":
+    template: "<%= projectName %> <% if (filePath) { %>| <%= relativeFilePath %><% } %>"
+  docblockr: {}
   editor:
-    invisibles: {}
-    scrollPastEnd: true
     fontFamily: "Ubuntu mono"
     fontSize: 15
+    invisibles:
+      eol: " "
+    scrollPastEnd: true
     showIndentGuide: true
+    showInvisibles: true
+  emmet: {}
+  "file-icons": {}
+  "flex-tool-bar": {}
+  "fuzzy-finder":
+    useAlternateScoring: true
+  "git-diff": {}
+  "git-plus": {}
   linter:
     lintOnFly: false
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-  tabs:
-    usePreviewTabs: true
-  "project-manager":
-    sortBy: "group"
-    showPath: false
+  "linter-jscs":
+    esnext: true
+    onlyConfig: true
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+  "linter-phpcs":
+    codeStandardOrConfigFile: "Drupal"
+    disableWhenNoConfigFile: true
+  "markdown-preview": {}
   minimap:
     plugins:
+      codeglance: true
       "find-and-replace": true
       "git-diff": false
       "highlight-selected": true
-      pigments: true
-      codeglance: true
+      pigments: false
+  "minimap-codeglance":
+    numberOfLines: 12
+  "one-dark-ui": {}
+  pigments:
+    markerType: "underline"
+    sortPaletteColors: "by color"
+  "project-manager":
+    showPath: false
+    sortBy: "group"
+  "symbols-tree-view":
+    zAutoHideTypes: "var"
+  tabs:
+    usePreviewTabs: true
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "tree-view":
+    hideIgnoredNames: true
+  wakatime:
+    apikey: "a8690841-3463-4348-8dea-067f76653c71"
+  welcome:
+    showOnStartup: false
   whitespace:
-    ensureSingleTrailingNewline: false
     ignoreWhitespaceOnCurrentLine: false
-  "advanced-new-file":
-    suggestCurrentFilePath: true
-    showFilesInAutoComplete: true
-  "custom-title":
-    template: "<%= projectName %> <% if (filePath) { %>| <%= relativeFilePath %><% } %>"
-  "linter-jscs":
-    esnext: true
+  "you-complete-me": {}
+".html.php.text":
+  editor:
+    preferredLineLength: 120
+".js.source":
+  editor:
+    tabLength: 2
