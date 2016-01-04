@@ -18,7 +18,6 @@ brew cask install dropbox
 # Dev
 brew cask install atom
 brew cask install sequel-pro
-brew cask install kitematic
 brew cask install sourcetree
 brew cask install github-desktop
 brew cask install google-chrome
