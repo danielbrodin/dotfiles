@@ -5,6 +5,9 @@ atom.symlink/compile-cache/
 atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
-atom.symlink/projects.cson
+atom.symlink/projects.*
+atom.symlink/blob-store
+atom.symlink/git-time-machine
+atom.symlink/toolbar.cson
 
 git/gitconfig.symlink
