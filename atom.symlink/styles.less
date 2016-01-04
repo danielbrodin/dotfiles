@@ -1,7 +1,27 @@
 @import "ui-variables";
+@syntax-indent-guide-color: rgba(255,255,255,0.05);
 
 // .tab-bar {
 //   .tab {
 //     max-width: initial;
+//   }
+// }
+
+atom-text-editor::shadow {
+    // Show leading whitespace when marking
+    .indent-guide {
+        box-shadow: inset 1px 0 @syntax-indent-guide-color;
+    }
+    .leading-whitespace.indent-guide.invisible-character {
+        color: @syntax-background-color;
+    }
+    .invisible-character {
+        color: @syntax-background-color;
+    }
+}
+
+// atom-text-editor::shadow .source {
+//   .punctuation, .delimiter, .brace {
+//     opacity: 0.1;
 //   }
 // }
